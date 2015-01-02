@@ -1,2 +1,2 @@
-nevercat
-========
+NeverCat Wordpress theme
+========================
