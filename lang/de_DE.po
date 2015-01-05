@@ -1,0 +1,228 @@
+# Copyright (C) 2015 Ingo Malchow
+# This file is distributed under the MIT License.
+msgid ""
+msgstr ""
+"Project-Id-Version: NeverCat 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/nevercat\n"
+"POT-Creation-Date: 2015-01-05 21:34+0100\n"
+"PO-Revision-Date: 2015-01-05 21:43+0100\n"
+"Last-Translator: Ingo Malchow <ingomalchow@gmail.com>\n"
+"Language-Team: German <ingo@neverendingo.de>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-KeywordsList: __;_x;_e\n"
+
+#: ../content.php:27
+#, php-format
+msgid "Continue reading %s"
+msgstr "%s weiterlesen"
+
+#: ../content.php:32
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: ../comments.php:14
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Diese Seite bitte nicht direkt laden. Danke!"
+
+#: ../comments.php:19
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Dieser Beitrag ist passwortgeschützt. Passwort eingeben um Kommentare zu "
+"lesen."
+
+#: ../comments.php:29
+msgid "No Responses to"
+msgstr "Keine Antworten auf"
+
+#: ../comments.php:29
+msgid "One Response to"
+msgstr "Eine Antwort auf"
+
+#: ../comments.php:29
+msgid "% Responses to"
+msgstr "% Antworten auf"
+
+#: ../comments.php:35
+msgid "&larr; Older comments"
+msgstr "&larr; Ältere Kommentare"
+
+#: ../comments.php:36
+msgid "Newer comments &rarr;"
+msgstr "Neuere Kommentare &rarr;"
+
+#: ../comments.php:44
+msgid "Leave a Response"
+msgstr "Eine Antwort hinterlassen"
+
+#: ../comments.php:44
+#, php-format
+msgid "Leave a Response to %s"
+msgstr "Eine Antwort hinterlassen auf %s"
+
+#: ../comments.php:47
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a response."
+msgstr ""
+"Sie müssen <a href=\"%s\">eingeloggt sein</a> um eine Antwort zu "
+"hinterlassen."
+
+#: ../comments.php:51
+#, php-format
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "Eingeloggt als <a href=\"%s/wp-admin/profile.php\">%s</a>."
+
+#: ../comments.php:51
+msgid "Log out of this account"
+msgstr "Aus diesem Account ausloggen"
+
+#: ../comments.php:51
+msgid "Log out &raquo;"
+msgstr "Ausloggen &raquo;"
+
+#: ../comments.php:54
+msgid "Name"
+msgstr "Name"
+
+#: ../comments.php:54 ../comments.php:58
+msgid " (required)"
+msgstr "(erforderlich)"
+
+#: ../comments.php:58
+msgid "Email (will not be published)"
+msgstr "Email (wird nicht veröffentlicht)"
+
+#: ../comments.php:62
+msgid "Website"
+msgstr "Webseite"
+
+#: ../comments.php:67
+msgid "Comment"
+msgstr "Kommentar"
+
+#: ../comments.php:70
+msgid "You can use these tags:"
+msgstr "Sie können diese Tags benutzen:"
+
+#: ../functions.php:35
+#, php-format
+msgid "Error: %s not found"
+msgstr "Fehler: %s nicht gefunden"
+
+#: ../includes/author.php:16
+msgid "Published by"
+msgstr "Veröffentlicht von"
+
+#: ../includes/author.php:27
+#, php-format
+msgid "View all posts by %s"
+msgstr "Zeige alle Beiträge von %s"
+
+#: ../library/comments.php:17
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#: ../library/comments.php:18
+#, php-format
+msgid "%1$s"
+msgstr "%1$s"
+
+#: ../library/comments.php:19
+msgid "(Edit)"
+msgstr "(Bearbeiten)"
+
+#: ../library/comments.php:25
+msgid "Your comment is awaiting moderation."
+msgstr "Ihr Kommentar wartet auf Moderation."
+
+#: ../library/customize.php:19
+msgid "positioning elements"
+msgstr "Elemente positionieren"
+
+#: ../library/customize.php:20
+msgid "Here you can define element positions"
+msgstr "Hier können Sie die Position der Elemente festlegen"
+
+#: ../library/customize.php:33
+msgid "sidebar on left side"
+msgstr "Seitenleiste auf der linken Seite"
+
+#: ../library/customize.php:51
+msgid "Use Off-Canvas-Menu"
+msgstr "Benutze Off-Canvas-Menü"
+
+#: ../library/meta.php:14
+msgid "Featured"
+msgstr "Hervorgehoben"
+
+#: ../library/meta.php:28
+msgid "Updated on"
+msgstr "Aktualisiert am"
+
+#: ../library/meta.php:72
+msgid "Leave a comment"
+msgstr "Einen Kommentar hinterlassen"
+
+#: ../library/meta.php:72
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: ../library/meta.php:72
+msgid "% Comments"
+msgstr "% Kommentare"
+
+#: ../library/widgets.php:19
+msgid "Sidebar Widgets"
+msgstr "Seitenleisten-Widgets"
+
+#: ../library/widgets.php:20
+msgid "Sidebar for the main content area"
+msgstr "Seitenleiste für den Haupt-Inhaltsbereich"
+
+#: ../library/widgets.php:32
+msgid "Topbar Widgets"
+msgstr ""
+
+#: ../library/widgets.php:33
+msgid "Widgets above the topbar area"
+msgstr "Widgets über der Topbar"
+
+#: ../library/widgets.php:45
+msgid "Bottom Widgets"
+msgstr "Widgets unten"
+
+#: ../library/widgets.php:46
+msgid "Widgets below the content"
+msgstr "Widgets unter dem Inhalt"
+
+#: ../library/widgets.php:58
+msgid "Page Bottom Widgets"
+msgstr "Widgets am Seitenende"
+
+#: ../library/widgets.php:59
+msgid "Widgets at the page bottom"
+msgstr "Widgets am unteren Bereich der Seite"
+
+#~ msgid "NeverCat"
+#~ msgstr "NeverCat"
+
+#~ msgid "https://github.com/neverendingo/nevercat/"
+#~ msgstr "https://github.com/neverendingo/nevercat/"
+
+#~ msgid ""
+#~ "Base Theme based on the foundation css framework. It will hopefully get a "
+#~ "lot of children"
+#~ msgstr ""
+#~ "Basistheme basierend auf dem Foundation CSS-Framework. Es bekommt "
+#~ "hoffentlich eine Menge Kinder"
+
+#~ msgid "Ingo Malchow"
+#~ msgstr "Ingo Malchow"
+
+#~ msgid "http://neverendingo.de/"
+#~ msgstr "http://neverendingo.de/"

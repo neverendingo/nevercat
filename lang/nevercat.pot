@@ -1,0 +1,203 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NeverCat 1.0.0\n"
+"POT-Creation-Date: 2015-01-05 21:34+0100\n"
+"PO-Revision-Date: 2015-01-05 21:34+0100\n"
+"Last-Translator: Ingo Malchow <ingomalchow@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../content.php:27
+#, php-format
+msgid "Continue reading %s"
+msgstr ""
+
+#: ../content.php:32
+msgid "Pages:"
+msgstr ""
+
+#: ../comments.php:14
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: ../comments.php:19
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../comments.php:29
+msgid "No Responses to"
+msgstr ""
+
+#: ../comments.php:29
+msgid "One Response to"
+msgstr ""
+
+#: ../comments.php:29
+msgid "% Responses to"
+msgstr ""
+
+#: ../comments.php:35
+msgid "&larr; Older comments"
+msgstr ""
+
+#: ../comments.php:36
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: ../comments.php:44
+msgid "Leave a Response"
+msgstr ""
+
+#: ../comments.php:44
+#, php-format
+msgid "Leave a Response to %s"
+msgstr ""
+
+#: ../comments.php:47
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a response."
+msgstr ""
+
+#: ../comments.php:51
+#, php-format
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr ""
+
+#: ../comments.php:51
+msgid "Log out of this account"
+msgstr ""
+
+#: ../comments.php:51
+msgid "Log out &raquo;"
+msgstr ""
+
+#: ../comments.php:54
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:54 ../comments.php:58
+msgid " (required)"
+msgstr ""
+
+#: ../comments.php:58
+msgid "Email (will not be published)"
+msgstr ""
+
+#: ../comments.php:62
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:67
+msgid "Comment"
+msgstr ""
+
+#: ../comments.php:70
+msgid "You can use these tags:"
+msgstr ""
+
+#: ../functions.php:35
+#, php-format
+msgid "Error: %s not found"
+msgstr ""
+
+#: ../includes/author.php:16
+msgid "Published by"
+msgstr ""
+
+#: ../includes/author.php:27
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../library/comments.php:17
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: ../library/comments.php:18
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: ../library/comments.php:19
+msgid "(Edit)"
+msgstr ""
+
+#: ../library/comments.php:25
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../library/customize.php:19
+msgid "positioning elements"
+msgstr ""
+
+#: ../library/customize.php:20
+msgid "Here you can define element positions"
+msgstr ""
+
+#: ../library/customize.php:33
+msgid "sidebar on left side"
+msgstr ""
+
+#: ../library/customize.php:51
+msgid "Use Off-Canvas-Menu"
+msgstr ""
+
+#: ../library/meta.php:14
+msgid "Featured"
+msgstr ""
+
+#: ../library/meta.php:28
+msgid "Updated on"
+msgstr ""
+
+#: ../library/meta.php:72
+msgid "Leave a comment"
+msgstr ""
+
+#: ../library/meta.php:72
+msgid "1 Comment"
+msgstr ""
+
+#: ../library/meta.php:72
+msgid "% Comments"
+msgstr ""
+
+#: ../library/widgets.php:19
+msgid "Sidebar Widgets"
+msgstr ""
+
+#: ../library/widgets.php:20
+msgid "Sidebar for the main content area"
+msgstr ""
+
+#: ../library/widgets.php:32
+msgid "Topbar Widgets"
+msgstr ""
+
+#: ../library/widgets.php:33
+msgid "Widgets above the topbar area"
+msgstr ""
+
+#: ../library/widgets.php:45
+msgid "Bottom Widgets"
+msgstr ""
+
+#: ../library/widgets.php:46
+msgid "Widgets below the content"
+msgstr ""
+
+#: ../library/widgets.php:58
+msgid "Page Bottom Widgets"
+msgstr ""
+
+#: ../library/widgets.php:59
+msgid "Widgets at the page bottom"
+msgstr ""

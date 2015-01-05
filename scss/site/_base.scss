@@ -1,0 +1,245 @@
+/**
+ * Table of Contents
+ *
+ * 1.0 - Custom settings
+ * 2.0 - Typography
+ * 3.0 - Header, sidebar and footer
+ * 4.0 - Content
+ *  4.1 - Pages
+ *  4.2 - Posts
+ *  4.3 - Widgets
+ *  4.4 - Comments
+  * 4.5 - Lists
+  * 4.6 - Forms
+  * 4.7 - Author box
+ * 5.0 - Plugins
+ * 6.0 - Media Queries
+
+ * ----------------------------------------------------------------------------
+ */
+
+
+
+/**
+ * 1.0 Custom settings
+ * ----------------------------------------------------------------------------
+ */
+
+body {
+  background: #efefef;
+}
+// Reset margin and padding on figure element
+figure { 
+  margin: 0; 
+  padding: 0;
+  max-width: 100%;
+}
+
+// Add some basic styling for figcaption element
+figcaption {
+  margin-bottom: rem-calc(20);
+  margin-top: rem-calc(10); 
+  color: #6f6f6f; 
+}
+
+i {
+  margin-right: 5px;
+}
+
+// Add the alignment classes used by the WordPress media library
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote.alignleft,
+img.alignleft {
+  margin: rem-calc(7) rem-calc(24) rem-calc(7) 0;
+}
+
+.wp-caption.alignleft {
+  margin: rem-calc(7) rem-calc(14) rem-calc(7) 0;
+}
+
+blockquote.alignright,
+img.alignright {
+  margin: rem-calc(7) 0 rem-calc(7) rem-calc(24);
+}
+
+.comment-reply-link {
+  @include button;
+}
+// Fix the issue where the WP adminbar overlaps the mobile menu
+#wpadminbar {
+  position: fixed !important;
+}
+
+
+/**
+ * 2.0 Typography
+ * ----------------------------------------------------------------------------
+ */
+
+// Insert styles here
+
+
+/**
+ * 3.0 Header, sidebar and footer
+ * ----------------------------------------------------------------------------
+ */
+
+.site-main > .content-wrap > header > h1 {
+  margin-top: 2rem;
+}
+.site-main {
+  .content-wrap {
+    article, .author-info, .navigation, #comments, #respond {
+      margin: 2rem 0;
+      padding: 1rem;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+      
+      @include panel(
+        $bg: $white,
+        $adjust: true
+      );
+    }
+  }
+}
+
+#sidebar {
+  margin: 2rem 0;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  
+  @include panel(
+    $bg: $white,
+    $adjust: true
+  );
+}
+
+#footer {
+  background-color: $oil;
+  color: $white;
+  padding-top: rem-calc(20);
+  
+  h1, h2, h3, h4, h5, h6, p {
+    color: $white;
+  }
+  a {
+    color: $silver;
+  }
+}
+
+/**
+ * 4.0 Content
+ * ----------------------------------------------------------------------------
+ */
+
+
+  /**
+   * 4.1 Pages
+   * ------------------------------------
+   */
+
+ 
+  /**
+   * 4.2 Posts
+   * ------------------------------------
+   */
+
+  /**
+   * 4.3 Widgets
+   * ------------------------------------
+   */
+
+  /**
+   * 4.4 Comments
+   * ------------------------------------
+   */
+  .commentlist {
+    list-style: none;
+    margin-left: 0;
+    
+    ul {
+      list-style: none;
+    }
+  }
+  // Insert styles here
+
+
+  /**
+   * 4.5 Lists
+   * ------------------------------------
+   */
+
+  // Insert styles here
+
+
+  /**
+   * 4.6 Forms
+   * ------------------------------------
+   */
+
+  // Insert styles here
+
+  /**
+   * 4.7 Author box
+   */
+  
+  .vcard {
+    .author-avatar {
+      float: left;
+      
+      @include clearfix();
+    }
+  }
+  
+/**
+ * 5.0 Plugins
+ * ----------------------------------------------------------------------------
+ */
+
+// Insert styles here
+
+/**
+ * 6.0 Media Queries
+ * ----------------------------------------------------------------------------
+ */
+
+@media #{$small-up} { }
+
+@media #{$small-only} { }
+
+@media #{$medium-up} {
+}
+
+@media #{$medium-only} { }
+
+@media #{$large-up} { }
+@media #{$large-only} { }
+
+@media #{$xlarge-up} {
+  .site-main {
+    .content-wrap {
+    }
+  }
+}
+
+@media #{$xlarge-only} { }
+
+@media #{$xxlarge-up} { }
+@media #{$xxlarge-only} { }
+
