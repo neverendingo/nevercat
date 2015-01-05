@@ -17,11 +17,17 @@ To make use of the development environment you need some dependencies.
 * [Bower](http://bower.io): This takes care of getting the necessary upstream files.
 
 The project file (package.json) luckily takes care of most of this. Simply
+
 `[sudo] npm install`
+
 and the necessary modules are installed locally, and bower gets called to automatically pull its dependencies
 
 After the initial setup all you need to do is running
+
 `grunt`
+
 so the complete task list is being called. run grunt with a specific taskname to only run that or
+
 `grunt watch`
+
 and grunt awaits changes in the theme files to run whatever task fits.
