@@ -38,9 +38,9 @@
 		?>
 	</div>
 	<?php if( ! is_page() ) : ?>
-	<footer class="panel">
-		<?php nevercat_entry_meta(); ?>
-	</footer>
+		<footer class="panel">
+			<?php nevercat_entry_meta(); ?>
+		</footer>
 	<?php endif; ?>
 	<?php do_action( 'nevercat_post_end' ); ?>
 </article>
