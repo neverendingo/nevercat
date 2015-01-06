@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NeverCat 1.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/nevercat\n"
-"POT-Creation-Date: 2015-01-05 21:34+0100\n"
-"PO-Revision-Date: 2015-01-05 21:43+0100\n"
+"POT-Creation-Date: 2015-01-06 09:35+0100\n"
+"PO-Revision-Date: 2015-01-06 09:37+0100\n"
 "Last-Translator: Ingo Malchow <ingomalchow@gmail.com>\n"
 "Language-Team: German <ingo@neverendingo.de>\n"
 "Language: de_DE\n"
@@ -108,6 +108,10 @@ msgstr "Kommentar"
 msgid "You can use these tags:"
 msgstr "Sie können diese Tags benutzen:"
 
+#: ../comments.php:71
+msgid "Submit Comment"
+msgstr "Kommentar absenden"
+
 #: ../functions.php:35
 #, php-format
 msgid "Error: %s not found"
@@ -186,7 +190,7 @@ msgstr "Seitenleiste für den Haupt-Inhaltsbereich"
 
 #: ../library/widgets.php:32
 msgid "Topbar Widgets"
-msgstr ""
+msgstr "Topbar-Widgets"
 
 #: ../library/widgets.php:33
 msgid "Widgets above the topbar area"

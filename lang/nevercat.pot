@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: NeverCat 1.0.0\n"
-"POT-Creation-Date: 2015-01-05 21:34+0100\n"
-"PO-Revision-Date: 2015-01-05 21:34+0100\n"
+"POT-Creation-Date: 2015-01-06 09:35+0100\n"
+"PO-Revision-Date: 2015-01-06 09:36+0100\n"
 "Last-Translator: Ingo Malchow <ingomalchow@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: English\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
@@ -100,6 +100,10 @@ msgstr ""
 
 #: ../comments.php:70
 msgid "You can use these tags:"
+msgstr ""
+
+#: ../comments.php:71
+msgid "Submit Comment"
 msgstr ""
 
 #: ../functions.php:35
