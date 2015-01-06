@@ -8,7 +8,6 @@ if( ! function_exists('NeverCat_Scripts') ) {
 		wp_enqueue_style('nevercat-fonts','//fonts.googleapis.com/css?family=Bitter:400,400italic|Open+Sans:400,300,600', array(), '' );
 		wp_enqueue_style( 'main', get_template_directory_uri() . '/css/nevercat.css', array(), '' );
 
-
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('nevercat');
 	}
