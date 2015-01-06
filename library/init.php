@@ -7,6 +7,8 @@
  * @since NeverCat 1.0
  */
 
+if (!isset($content_width)) { $content_width = 728; }
+
 add_action( 'after_setup_theme', 'nevercat_setup' );
 function nevercat_setup() {
 
@@ -47,13 +49,13 @@ if( ! function_exists( 'nevercat_searchform' ) ) {
 							<div class="row collapse">
 								<div class="small-10 columns">
 									<label>
-										<span class="screen-reader-text">' . _x( 'Search for:', 'label' ) . '</span>
-										<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search …', 'placeholder' ) .
+										<span class="screen-reader-text">' . _x( 'Search for:', 'label', 'nevercat' ) . '</span>
+										<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search ...', 'placeholder', 'nevercat' ) .
 										'" value="'. get_search_query() . '" name="s" title="' . esc_attr_x( 'Search for:', 'label' ) . '" />
 									</label>
 								</div>
 								<div class="small-2 columns">
-									<input type="submit" class="search-submit button postfix" value="' . esc_attr_x( 'Search', 'submit button' ) . '" />
+									<input type="submit" class="search-submit button postfix" value="' . esc_attr_x( 'Search', 'submit button', 'nevercat' ) . '" />
 								</div>
 							</div>
 						</div>
