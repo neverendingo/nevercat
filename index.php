@@ -28,13 +28,15 @@
 				// Enter the famous loop.
 				while ( have_posts() ) : the_post();
 					get_template_part( 'content', get_post_format() );
-				endwhile;
-				/*the_posts_pagination( array(
-					'prev_text'          => __( 'Previous page', 'nevercat' ),
-					'next_text'          => __( 'Next page', 'nevercat' ),
-					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'nevercat' ) . ' </span>',
-				) );*/
-			else :
+				endwhile; ?>
+				
+				<div class="navigation">
+					<div class="pagination-centered">
+						<?php nevercat_paginate(); ?>
+					</div>
+				</div>
+				
+			<?php else :
 				get_template_part( 'content', 'none' );
 			endif; ?>
 			<?php do_action( 'nevercat_content_end' ); ?>
