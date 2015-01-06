@@ -79,6 +79,11 @@ img.alignright {
 .comment-reply-link {
   @include button;
 }
+
+.screen-reader-text {
+  display: none;
+}
+
 // Fix the issue where the WP adminbar overlaps the mobile menu
 #wpadminbar {
   position: fixed !important;
