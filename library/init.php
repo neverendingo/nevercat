@@ -58,8 +58,13 @@ function nevercat_paginate() {
 	$paginated = str_replace( "<li><span class='page-numbers current'>", '<li class="current"><a href="#">', $paginated);
 	$paginated = str_replace( '</span>', '</a>', $paginated);
 	$paginated = str_replace( '<li><span class="page-numbers dots">', "<li><a href='#'>", $paginated );
-	if ( $paginated ) {
-		echo $paginated;
+	if ( $paginated ) { ?>
+		<div class="navigation">
+			<div class="pagination-centered">
+				<?php echo $paginated; ?>
+			</div>
+		</div>
+		<?php
 	}
 }
 

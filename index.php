@@ -30,11 +30,7 @@
 					get_template_part( 'content', get_post_format() );
 				endwhile; ?>
 				
-				<div class="navigation">
-					<div class="pagination-centered">
-						<?php nevercat_paginate(); ?>
-					</div>
-				</div>
+				<?php nevercat_paginate(); ?>
 				
 			<?php else :
 				get_template_part( 'content', 'none' );
