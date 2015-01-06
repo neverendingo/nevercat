@@ -37,6 +37,33 @@ function nevercat_setup() {
 }
 
 /**
+ * custom searchform
+ */
+if( ! function_exists( 'nevercat_searchform' ) ) {
+	function nevercat_searchform( $form ) {
+		$form = '<form role="search" method="get" class="search-form" action="' . home_url( '/' ) . '">
+					<div class="row">
+						<div class="large-12 columns">
+							<div class="row collapse">
+								<div class="small-10 columns">
+									<label>
+										<span class="screen-reader-text">' . _x( 'Search for:', 'label' ) . '</span>
+										<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search …', 'placeholder' ) .
+										'" value="'. get_search_query() . '" name="s" title="' . esc_attr_x( 'Search for:', 'label' ) . '" />
+									</label>
+								</div>
+								<div class="small-2 columns">
+									<input type="submit" class="search-submit button postfix" value="' . esc_attr_x( 'Search', 'submit button' ) . '" />
+								</div>
+							</div>
+						</div>
+					</form>';
+			
+		return $form;
+	}
+	add_filter( 'get_search_form', 'nevercat_searchform' );
+}
+/**
  * make posts page navigation
  */
 function nevercat_paginate() {
