@@ -41,6 +41,7 @@
 
 <?php if ( comments_open() ) : ?>
 	<section id="respond">
+		<?php do_action( 'nevercat_respond_start' ); ?>
 		<h3><?php comment_form_title( __('Leave a Response', 'nevercat'), __('Leave a Response to %s', 'nevercat') ); ?></h3>
 		<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
 		<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
@@ -73,5 +74,6 @@
 				<?php do_action('comment_form', $post->ID); ?>
 			</form>
 		<?php endif; // If registration required and not logged in ?>
+		<?php do_action( 'nevercat_respond_end' ); ?>
 	</section>
 <?php endif; ?>
