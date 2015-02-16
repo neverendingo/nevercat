@@ -26,7 +26,7 @@
  */
 
 body {
-  background: #efefef;
+  background: #efefef url(../images/noisy.png) repeat;
 }
 // Reset margin and padding on figure element
 figure { 
@@ -124,16 +124,22 @@ img.alignright {
     article, .author-info, .navigation, #comments, #respond {
       margin: 2rem 0;
       padding: 1rem;
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
       -ms-word-wrap: break-word;
       word-wrap: break-word;
       
       @include panel(
-        $bg: $white,
+        $bg: rgba(255, 255, 255, .6),
         $adjust: true
       );
     }
   }
+}
+
+.custom-header img {
+  margin: auto;
+  display: block;
+  max-height: 250px;
 }
 
 #sidebar {
@@ -143,7 +149,7 @@ img.alignright {
   word-wrap: break-word;
   
   @include panel(
-    $bg: $white,
+    $bg: rgba(255, 255, 255, .6),
     $adjust: true
   );
 }
@@ -161,6 +167,23 @@ img.alignright {
   }
 }
 
+.hero-unit {
+  background: rgba(148,148,148,0);
+  background: -moz-linear-gradient(top, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 11%, rgba(148,148,148,0.6) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(148,148,148,0)), color-stop(10%, rgba(246,246,246,0.07)), color-stop(100%, rgba(148,148,148,0.6)));
+  background: -webkit-linear-gradient(top, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 10%, rgba(148,148,148,0.6) 100%);
+  background: -o-linear-gradient(top, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 10%, rgba(148,148,148,0.6) 100%);
+  background: -ms-linear-gradient(top, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 10%, rgba(148,148,148,0.6) 100%);
+  background: linear-gradient(to bottom, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 10%, rgba(148,148,148,0.6) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#949494', endColorstr='#949494', GradientType=0 );
+  margin-bottom: -3em;
+  border-bottom: 1px solid #fff;
+  .row {
+    position: relative;
+    .custom-header {
+    }
+  }
+}
 /**
  * 4.0 Content
  * ----------------------------------------------------------------------------
@@ -250,6 +273,17 @@ img.alignright {
 @media #{$large-only} { }
 
 @media #{$xlarge-up} {
+  .herounit-widgets {
+    .textwidget {
+      margin-top: 2rem;
+      h1 {
+        font-size: rem-calc(60);
+      }
+      p {
+        font-size: rem-calc(22);
+      }
+    }
+  }
   .site-main {
     .content-wrap {
     }
