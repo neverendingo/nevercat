@@ -10,8 +10,8 @@
 ?>
 
 <?php do_action( 'nevercat_layout_start' ); ?>
-<div class="top-bar-container contain-to-grid">
-	<nav class="top-bar" data-topbar role="navigation">
+<div class="top-bar-container contain-to-grid sticky">
+	<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
 		<ul class="title-area">
 			<li class="name">
 				<h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
