@@ -7,7 +7,7 @@
  * @since NeverCat 1.0
  */
 
-if (!isset($content_width)) { $content_width = 728; }
+if (!isset($content_width)) { $content_width = 1200; }
 
 add_action( 'after_setup_theme', 'nevercat_setup' );
 function nevercat_setup() {
@@ -36,6 +36,23 @@ function nevercat_setup() {
 
 	// In case infinite scrolling is preferred
 	add_theme_support( 'infinite-scroll', array( 'container' => 'content', ) );
+	
+	// Enable custom header image
+	$header_args = array(
+		'default-image'          => '',
+		'width'                  => 0,
+		'height'                 => 0,
+		'flex-width'             => true,
+		'flex-height'            => true,
+		'uploads'                => true,
+		'random-default'         => false,
+		'header-text'            => false,
+		'default-text-color'     => '',
+		'wp-head-callback'       => '',
+		'admin-head-callback'    => '',
+		'admin-preview-callback' => '',
+	);
+	add_theme_support( 'custom-header', $header_args );
 }
 
 /**
@@ -97,3 +114,11 @@ function nevercat_paginate() {
 	}
 }
 
+function nevercat_has_header() {
+	$custom_header = get_header_image();
+	if ( $custom_header === "" ) {
+		return false;
+	} else {
+		return true;
+	}
+}
