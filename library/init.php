@@ -114,11 +114,9 @@ function nevercat_paginate() {
 	}
 }
 
-function nevercat_has_header() {
-	$custom_header = get_header_image();
-	if ( $custom_header === "" ) {
-		return false;
-	} else {
-		return true;
+function nevercat_has_admin_bar() {
+	if ( is_admin_bar_showing() ) {
+		echo '<style>.top-bar-container.sticky.fixed { margin-top: 2em; }</style>';
 	}
 }
+add_action( 'nevercat_body_start', 'nevercat_has_admin_bar' );
