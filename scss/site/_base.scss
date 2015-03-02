@@ -142,15 +142,13 @@ img.alignright {
     }
   }
 }
-.site-main > .content-wrap > header > h1 {
-  margin-top: 2rem;
-}
+
 .site-main {
   .content-wrap {
-    article, .author-info, .navigation, #comments, #respond {
+    article, .author-info, .navigation, #comments, #respond, section {
       margin: 2rem 0;
       padding: 1rem;
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
       -ms-word-wrap: break-word;
       word-wrap: break-word;
       
@@ -203,7 +201,6 @@ img.alignright {
   background: -ms-linear-gradient(top, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 10%, rgba(148,148,148,0.6) 100%);
   background: linear-gradient(to bottom, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 10%, rgba(148,148,148,0.6) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#949494', endColorstr='#949494', GradientType=0 );
-  margin-bottom: -3em;
   border-bottom: 1px solid #fff;
   .row {
     position: relative;
@@ -227,7 +224,54 @@ img.alignright {
    * 4.2 Posts
    * ------------------------------------
    */
+@mixin title {
+  font-family: "foundation-icons";
+  color: #999;
+  position: absolute;
+  right: 0;
+  
+}
 
+.entry-title, .page-title {
+  position: relative;
+}
+
+.format-gallery .entry-title:before, .format-image .entry-title:before {
+  content:"\f195";
+  @include title;
+}
+.format-link .entry-title:before {
+  content: "\f165";
+  @include title;
+}
+.format-chat .entry-title:before {
+  content: "\f132";
+  @include title;
+}
+.format-quote .entry-title:before {
+  content: "\f1a3";
+  @include title;
+}
+.format-video .entry-title:before {
+  content: "\f20e";
+  @include title;
+}
+.format-audio .entry-title:before {
+  content: "\f173";
+  @include title;
+}
+.format-status .entry-title:before {
+  content: "\f151";
+  @include title;
+}
+.page-title.nothing-found:before {
+  content: "\f101";
+  @include title;
+}
+
+.youtube-player {
+  max-width: 100%;
+}
   /**
    * 4.3 Widgets
    * ------------------------------------
@@ -307,7 +351,7 @@ img.alignright {
         font-size: rem-calc(60);
       }
       p {
-        font-size: rem-calc(22);
+        font-size: rem-calc(20);
       }
     }
   }
