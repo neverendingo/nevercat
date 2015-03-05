@@ -122,3 +122,13 @@ function nevercat_widgets_in_herounit() {
 	<?php }
 }
 add_action( 'nevercat_herounit', 'nevercat_widgets_in_herounit' );
+
+function search_form_no_filters() {
+  // look for local searchform template
+  $search_form_template = locate_template( 'searchform.php' );
+  if ( '' !== $search_form_template ) {
+    // searchform.php exists, remove all filters
+    remove_all_filters('get_search_form');
+  }
+}
+add_action('pre_get_search_form', 'search_form_no_filters');
