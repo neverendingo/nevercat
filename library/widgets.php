@@ -62,6 +62,21 @@ function nevercat_sidebarwidgets() {
 		'before_title'  => '<h6>',
 		'after_title'   => '</h6>'
 	));
+	
+	/*
+	 * The Hero Unit can have its own widgets
+	 */
+	register_sidebar( array(
+		'id'            => 'herounit-widgets',
+		'name'          => __('Hero Unit Widgets', 'nevercat'),
+		'description'   => __('Sidebar for the hero unit on the frontpage', 'nevercat'),
+		'before_widget' => get_header_image() ?
+			'<article id="%1$s" class="small-7 columns widget %2$s">' : '<article id="%1$s" class="small-12 columns widget %2$s">',
+		'class'			=> get_header_image() ? 'small-9 columns' : '',
+		'after_widget'  => '</article>',
+		'before_title'  => '<h6>',
+		'after_title'   => '</h6>'
+	));
 }
 
 /**
@@ -99,3 +114,21 @@ function nevercat_widgets_bottom() {
 }
 add_action( 'nevercat_page_footer', 'nevercat_widgets_bottom' );
 
+function nevercat_widgets_in_herounit() {
+	if ( is_active_sidebar( 'herounit-widgets' ) ) { ?>
+		<aside class="herounit-widgets widget-area" role="complementary">
+			<?php dynamic_sidebar( 'herounit-widgets' ); ?>
+		</aside>
+	<?php }
+}
+add_action( 'nevercat_herounit', 'nevercat_widgets_in_herounit' );
+
+function search_form_no_filters() {
+  // look for local searchform template
+  $search_form_template = locate_template( 'searchform.php' );
+  if ( '' !== $search_form_template ) {
+    // searchform.php exists, remove all filters
+    remove_all_filters('get_search_form');
+  }
+}
+add_action('pre_get_search_form', 'search_form_no_filters');

@@ -25,8 +25,8 @@
 			<nav class="right-off-canvas-menu" aria-hidden="true">
 				<?php NeverCat_mobile_off_canvas(); ?>
 			</nav>
-			<div class="top-bar-container contain-to-grid show-for-medium-up">
-				<nav class="top-bar" data-topbar role="navigation">
+			<div class="top-bar-container contain-to-grid show-for-medium-up sticky">
+				<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
 					<ul class="title-area">
 						<li class="name">
 							<h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>

@@ -26,7 +26,7 @@
  */
 
 body {
-  background: #efefef;
+  background: #efefef url(../images/noisy.png) repeat;
 }
 // Reset margin and padding on figure element
 figure { 
@@ -116,24 +116,54 @@ img.alignright {
  * ----------------------------------------------------------------------------
  */
 
-.site-main > .content-wrap > header > h1 {
-  margin-top: 2rem;
+.top-bar-container {
+  transition: all ease .2s;
+  .title-area h1 {
+    font-family: $paragraph-font-family;
+  }
 }
+.top-bar-container.sticky.fixed {
+  background: rgba(51, 51, 51, .6);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+  border-bottom: 1px solid rgb(98, 98, 98);
+  .top-bar {
+    background: transparent;
+  }
+  .top-bar-section ul li {
+    background: transparent;
+  }
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    background: rgba(51, 51, 51, .4);
+    
+  }
+  .top-bar-section li:not(.has-form) {
+    .sub-menu li a {
+      background: #333;
+    }
+  }
+}
+
 .site-main {
   .content-wrap {
-    article, .author-info, .navigation, #comments, #respond {
+    article, .author-info, .navigation, #comments, #respond, section {
       margin: 2rem 0;
       padding: 1rem;
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
       -ms-word-wrap: break-word;
       word-wrap: break-word;
       
       @include panel(
-        $bg: $white,
+        $bg: rgba(255, 255, 255, .6),
         $adjust: true
       );
     }
   }
+}
+
+.custom-header img {
+  margin: auto;
+  display: block;
+  max-height: 250px;
 }
 
 #sidebar {
@@ -143,7 +173,7 @@ img.alignright {
   word-wrap: break-word;
   
   @include panel(
-    $bg: $white,
+    $bg: rgba(255, 255, 255, .6),
     $adjust: true
   );
 }
@@ -152,6 +182,7 @@ img.alignright {
   background-color: $oil;
   color: $white;
   padding-top: rem-calc(20);
+  box-shadow: inset 0 8px 20px rgba(0,0,0,.6);
   
   h1, h2, h3, h4, h5, h6, p {
     color: $white;
@@ -161,6 +192,22 @@ img.alignright {
   }
 }
 
+.hero-unit {
+  background: rgba(148,148,148,0);
+  background: -moz-linear-gradient(top, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 11%, rgba(148,148,148,0.6) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(148,148,148,0)), color-stop(10%, rgba(246,246,246,0.07)), color-stop(100%, rgba(148,148,148,0.6)));
+  background: -webkit-linear-gradient(top, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 10%, rgba(148,148,148,0.6) 100%);
+  background: -o-linear-gradient(top, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 10%, rgba(148,148,148,0.6) 100%);
+  background: -ms-linear-gradient(top, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 10%, rgba(148,148,148,0.6) 100%);
+  background: linear-gradient(to bottom, rgba(148,148,148,0) 0%, rgba(246,246,246,0.07) 10%, rgba(148,148,148,0.6) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#949494', endColorstr='#949494', GradientType=0 );
+  border-bottom: 1px solid #fff;
+  .row {
+    position: relative;
+    .custom-header {
+    }
+  }
+}
 /**
  * 4.0 Content
  * ----------------------------------------------------------------------------
@@ -177,7 +224,54 @@ img.alignright {
    * 4.2 Posts
    * ------------------------------------
    */
+@mixin title {
+  font-family: "foundation-icons";
+  color: #999;
+  position: absolute;
+  right: 0;
+  
+}
 
+.entry-title, .page-title {
+  position: relative;
+}
+
+.format-gallery .entry-title:before, .format-image .entry-title:before {
+  content:"\f195";
+  @include title;
+}
+.format-link .entry-title:before {
+  content: "\f165";
+  @include title;
+}
+.format-chat .entry-title:before {
+  content: "\f132";
+  @include title;
+}
+.format-quote .entry-title:before {
+  content: "\f1a3";
+  @include title;
+}
+.format-video .entry-title:before {
+  content: "\f20e";
+  @include title;
+}
+.format-audio .entry-title:before {
+  content: "\f173";
+  @include title;
+}
+.format-status .entry-title:before {
+  content: "\f151";
+  @include title;
+}
+.page-title.nothing-found:before {
+  content: "\f101";
+  @include title;
+}
+
+.youtube-player {
+  max-width: 100%;
+}
   /**
    * 4.3 Widgets
    * ------------------------------------
@@ -250,6 +344,17 @@ img.alignright {
 @media #{$large-only} { }
 
 @media #{$xlarge-up} {
+  .herounit-widgets {
+    .textwidget {
+      margin-top: 2rem;
+      h1 {
+        font-size: rem-calc(60);
+      }
+      p {
+        font-size: rem-calc(20);
+      }
+    }
+  }
   .site-main {
     .content-wrap {
     }
