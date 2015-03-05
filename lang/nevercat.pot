@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: NeverCat 1.0.0\n"
-"POT-Creation-Date: 2015-03-02 07:48+0100\n"
-"PO-Revision-Date: 2015-03-02 07:48+0100\n"
+"POT-Creation-Date: 2015-03-05 07:49+0100\n"
+"PO-Revision-Date: 2015-03-05 07:49+0100\n"
 "Last-Translator: Ingo Malchow <ingomalchow@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: English\n"
@@ -14,12 +14,12 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../content.php:28
+#: ../content.php:27
 #, php-format
 msgid "Continue reading %s"
 msgstr ""
 
-#: ../content.php:33
+#: ../content.php:32
 msgid "Pages:"
 msgstr ""
 
@@ -106,30 +106,34 @@ msgstr ""
 msgid "Submit Comment"
 msgstr ""
 
-#: ../404.php:8
+#: ../searchform.php:4 ../searchform.php:7
+msgid "Search"
+msgstr ""
+
+#: ../404.php:17
 msgid "File Not Found"
 msgstr ""
 
-#: ../404.php:12
+#: ../404.php:21
 msgid ""
 "The page you are looking for might have been removed, had its name changed, "
 "or is temporarily unavailable."
 msgstr ""
 
-#: ../404.php:14
+#: ../404.php:23
 msgid "Please try the following:"
 msgstr ""
 
-#: ../404.php:16
+#: ../404.php:25
 msgid "Check your spelling"
 msgstr ""
 
-#: ../404.php:17
+#: ../404.php:26
 #, php-format
 msgid "Return to the <a href=\"%s\">home page</a>"
 msgstr ""
 
-#: ../404.php:18
+#: ../404.php:27
 msgid "Click the <a href=\"javascript:history.back()\">Back</a> button"
 msgstr ""
 
